@@ -1,16 +1,20 @@
 package org.yaccc.dike.core;
 
-import lombok.Data;
+import lombok.Getter;
 
 /**
  * Created by xiezhaodong  on 2018/3/25
  * resources wrapper,
  */
-@Data
 public abstract class IResourcesWrapper {
     //
-    private String rName;
-    private String rType;
+    @Getter
+    protected String rName;
+    @Getter
+    protected String rType;
 
+    public abstract void setName(String name);
+
+    public abstract void setType(String type);
 
 }
