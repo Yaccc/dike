@@ -13,12 +13,12 @@ public class MethodResourcesWrapper extends IResourcesWrapper {
     }
 
     @Override
-    public void setName(String name) {
-
+    protected void setName(String name) {
+        super.rName=name;
     }
 
     @Override
-    public void setType(String type) {
-
+    protected void setType(String type) {
+        super.rType=type;
     }
 }

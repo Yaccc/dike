@@ -13,8 +13,8 @@ public abstract class IResourcesWrapper {
     @Getter
     protected String rType;
 
-    public abstract void setName(String name);
+    protected abstract void setName(String name);
 
-    public abstract void setType(String type);
+    protected abstract void setType(String type);
 
 }
